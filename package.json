@@ -1,0 +1,22 @@
+{
+  "name": "epages-rest-sdk",
+  "version": "0.0.1",
+  "description": "ePages REST SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pitkane/epages-rest-sdk.git"
+  },
+  "keywords": [
+    "epages"
+  ],
+  "author": "Mikko Pitkänen <mikko@mbit.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pitkane/epages-rest-sdk/issues"
+  },
+  "homepage": "https://github.com/pitkane/epages-rest-sdk#readme"
+}

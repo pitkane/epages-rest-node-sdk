@@ -8,19 +8,19 @@ epages.configure({
   'shop_name': 'DemoShop',
   'token': 'oddsVYIR0BY1sGTZoFmLthZzA66kykhS',
 });
-console.log(epages);
 
-// console.log(epages)
+console.log(epages)
 
-console.log(epages.shop)
-
-// epages.shop.get()
-//     .then( function(data) {
-//         console.log("Got Shop");
-//         // console.log("Error: " + error);
-//         console.log("Response: " + data);
-//         // console.log(JSON.stringify(data));
-//     })
+epages.shop.get('asdf')
+    .then( function(data) {
+        console.log("Got Shop");
+        // console.log("Error: " + error);
+        console.log("Response: " + data);
+        // console.log(JSON.stringify(data));
+    })
+    .catch( function(shi) {
+        console.log(shi);
+    });
 //
 // function wait () {
 //    if (true) {

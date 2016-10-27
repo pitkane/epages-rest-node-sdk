@@ -1,1 +1,1 @@
-module.exports = require('./lib/epages-rest-sdk.js')();
+module.exports = require('./lib/epages-rest-sdk.js'); // removed ()

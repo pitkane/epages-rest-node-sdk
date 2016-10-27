@@ -9,7 +9,15 @@ epages.configure({
 
 // console.log(epages)
 
-// epages.shop.get('asdf')
+// epages.shop.get()
+//     .then( function(data) {
+//         console.log("Response: " + data);
+//     })
+//     .catch(function(err) {
+//         console.log(err);
+//     });
+//
+// epages.orders.get()
 //     .then( function(data) {
 //         console.log("Response: " + data);
 //     })
@@ -17,18 +25,10 @@ epages.configure({
 //         console.log(err);
 //     });
 
-epages.orders.get()
-    .then( function(data) {
-        console.log("Response: " + data);
+epages.query('GET', '/products')
+    .then(function(data) {
+        console.log("Query data: " + data);
     })
     .catch(function(err) {
-        console.log(err);
+        console.log("Error: " + err)
     });
-
-// epages.query('GET', '/')
-//     .then(function(data) {
-//         console.log("Query data: " + data);
-//     })
-//     .catch(function(err) {
-//         console.log("Error: " + err)
-//     });

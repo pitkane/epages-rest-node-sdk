@@ -1,6 +1,4 @@
-var Promise = require('bluebird');
 var epages = require('../index');
-// epages = Promise.promisifyAll(epages);
 
 epages.configure({
   'schema': 'http',
@@ -9,23 +7,28 @@ epages.configure({
   'token': 'oddsVYIR0BY1sGTZoFmLthZzA66kykhS',
 });
 
-console.log(epages)
+// console.log(epages)
 
-epages.shop.get('asdf')
+// epages.shop.get('asdf')
+//     .then( function(data) {
+//         console.log("Response: " + data);
+//     })
+//     .catch(function(err) {
+//         console.log(err);
+//     });
+
+epages.orders.get()
     .then( function(data) {
-        console.log("Got Shop");
-        // console.log("Error: " + error);
         console.log("Response: " + data);
-        // console.log(JSON.stringify(data));
     })
-    .catch( function(shi) {
-        console.log(shi);
+    .catch(function(err) {
+        console.log(err);
     });
-//
-// function wait () {
-//    if (true) {
-//        console.log("asdf")
-//         setTimeout(wait, 1000);
-//     }
-// };
-// wait();
+
+// epages.query('GET', '/')
+//     .then(function(data) {
+//         console.log("Query data: " + data);
+//     })
+//     .catch(function(err) {
+//         console.log("Error: " + err)
+//     });
